@@ -25,12 +25,12 @@
         <div class="hidden sm:flex items-center space-x-8 text-base font-medium">
           <RouterLink to="/" class="hover:text-indigo-600 transition">{{ tHome }}</RouterLink>
           <RouterLink to="/about" class="hover:text-indigo-600 transition">{{ tAbout }}</RouterLink>
-          <RouterLink to="/projects" class="hover:text-indigo-600 transition">
-            {{ tProjects }}
-          </RouterLink>
-          <RouterLink to="/contact" class="hover:text-indigo-600 transition">
-            {{ tContact }}
-          </RouterLink>
+          <RouterLink to="/projects" class="hover:text-indigo-600 transition">{{
+            tProjects
+          }}</RouterLink>
+          <RouterLink to="/contact" class="hover:text-indigo-600 transition">{{
+            tContact
+          }}</RouterLink>
 
           <!-- Language selector -->
           <select
@@ -54,24 +54,24 @@
         class="sm:hidden mt-4 space-y-3 text-center text-base font-medium overflow-hidden"
       >
         <div class="border-t pt-3">
-          <RouterLink to="/" class="block hover:text-indigo-600" @click="isOpen = false">
-            {{ tHome }}
-          </RouterLink>
+          <RouterLink to="/" class="block hover:text-indigo-600" @click="isOpen = false">{{
+            tHome
+          }}</RouterLink>
         </div>
         <div class="border-t pt-3">
-          <RouterLink to="/about" class="block hover:text-indigo-600" @click="isOpen = false">
-            {{ tAbout }}
-          </RouterLink>
+          <RouterLink to="/about" class="block hover:text-indigo-600" @click="isOpen = false">{{
+            tAbout
+          }}</RouterLink>
         </div>
         <div class="border-t pt-3">
-          <RouterLink to="/projects" class="block hover:text-indigo-600" @click="isOpen = false">
-            {{ tProjects }}
-          </RouterLink>
+          <RouterLink to="/projects" class="block hover:text-indigo-600" @click="isOpen = false">{{
+            tProjects
+          }}</RouterLink>
         </div>
         <div class="border-t pt-3">
-          <RouterLink to="/contact" class="block hover:text-indigo-600" @click="isOpen = false">
-            {{ tContact }}
-          </RouterLink>
+          <RouterLink to="/contact" class="block hover:text-indigo-600" @click="isOpen = false">{{
+            tContact
+          }}</RouterLink>
         </div>
         <div class="border-t pt-3">
           <select
@@ -108,14 +108,13 @@ const changeLang = () => {
 }
 
 // Translated route labels
-const tHome = computed(() => t('title'))
+const tHome = computed(() => t('Home'))
 const tAbout = computed(() => t('about.title'))
 const tProjects = computed(() => t('projects.title'))
 const tContact = computed(() => t('contact.title'))
 </script>
 
 <style scoped>
-/* Smooth open/close transition for mobile menu */
 .mobile-menu-enter-active,
 .mobile-menu-leave-active {
   transition:
@@ -136,7 +135,6 @@ const tContact = computed(() => t('contact.title'))
   transform: translateY(0);
 }
 
-/* Optional font styling */
 .font-serif {
   font-family: 'Noto Serif JP', serif;
 }
