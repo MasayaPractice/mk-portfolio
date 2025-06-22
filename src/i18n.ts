@@ -6,8 +6,8 @@ import es from './locales/es.json'
 
 export const i18n = createI18n({
   legacy: false,
-  locale: 'en',
-  fallbackLocale: 'en',
+  locale: 'en', // 初期表示言語
+  fallbackLocale: 'en', // フォールバック言語
   messages: {
     en,
     ja,

@@ -1,54 +1,16 @@
 {
-  "Home": "Home",
-  "About": "About",
-  "Projects": "Projects",
-  "Contact": "Contact",
-
-  "title": "Overview of Skills & Experience",
-  "intro": "I’m Masaya Kiyoto, a multilingual full-stack developer with over 3 years of professional experience. Fluent in four languages—a rare skill among Japanese engineers—I excel at bridging cultural and technical gaps in global projects. My expertise spans modern frontend frameworks, backend APIs, and cloud deployments, enabling me to build robust, scalable applications that meet diverse international needs.",
-
-  "skillsTitle": "🛠️ Technical Skills Overview",
-
-  "frontend": "💻 Front-End Development",
-  "frontendDetail": "Languages & Frameworks:\nHTML5, CSS3, JavaScript (ES6+), TypeScript\nVue.js 3 (Composition API, <script setup>)\n\nUI/UX Design:\nTailwind CSS, DOM manipulation\n\nRouting:\nVue Router (SPA)",
-
-  "i18n": "🌐 Internationalisation (i18n)",
-  "i18nDetail": "Tools: vue-i18n\nLanguages: Japanese (native), English (C1), Spanish (B2), German (B1)\nFeatures: Dynamic UI, language persistence via localStorage, .json dictionaries",
-
-  "backend": "🔙 Back-End & API Integration",
-  "backendDetail": "Framework: Express.js (Node.js)\nAPI: RESTful (GET/POST/PUT/DELETE)\nHTTP: Axios\nDatabases: SQLite, MySQL",
-
-  "cloud": "☁️ Cloud & DevOps",
-  "cloudDetail": "AWS (basic deployment)\nGit (GitHub/GitLab)\nBuild & Deploy: Vite, Netlify/Vercel",
-
-  "testing": "🧪 Testing & Development Workflow",
-  "testingDetail": "Manual and unit testing\nLow-code: kintone\nData migration: over 1 million records",
-
-  "softSkills": "🤝 Business & Soft Skills",
-  "softSkillsDetail": "Multilingual: JA/EN/ES/DE\nCross-cultural collaboration\nClient support\nRemote work\nProblem solving\nProject coordination",
-
+  "home": {
+    "title": "Home"
+  },
   "about": {
-    "title": "About Me",
+    "title": "About",
     "intro": "I’m Masaya Kiyoto, a multilingual IT engineer and language instructor based in Barcelona. Over the past three years, I’ve designed and maintained web systems, conducted testing, and supported international clients.",
-    "educationIt": "My background combines education and IT – I’ve taught over 600 hours of Japanese on Preply and developed POS systems used in over 16,000 stores across Japan.",
+    "educationIt": "My background combines education and IT – I’ve taught over 600 hours of Japanese on Preply and developed POS systems used in over 16,000 shops across Japan.",
     "accenture": "At Gleamorb, I improved internal shop systems, and at Accenture Japan I supported large-scale data migration for Uniqlo’s global platform.",
     "languages": "I speak Japanese and English fluently, and have intermediate-level German (B1) and Spanish (B2). As one of the few Japanese professionals fluent in four languages, I bridge cultures and technology.",
     "strengths": "My strengths include analytical thinking, remote collaboration, and client-focused solutions. I’ve used low-code tools to boost workflows by about 30%, and facilitated communication across teams in Japan, Spain, and the Philippines.",
-    "closing": "I'm passionate about building technical solutions and creating meaningful cross-cultural connections."
+    "closing": "I’m passionate about building technical solutions and creating meaningful cross-cultural connections."
   },
-
-  "contact": {
-    "title": "CONTACT",
-    "description": "Have a question, project idea, or want to get in touch? Feel free to drop a message in English, Japanese, German, or Spanish.",
-    "form": {
-      "name": "Your name",
-      "email": "Your email",
-      "message": "Your message",
-      "send": "Send"
-    },
-    "footer": "Looking forward to hearing from you and exploring how we can work together."
-  },
-
   "projects": {
     "title": "Projects",
     "addProject": {
@@ -75,7 +37,31 @@
     },
     "noProjects": "No projects available.",
     "confirmDelete": "Are you sure you want to delete this project?",
-    "errorLoad": "Unable to load projects at the moment. Please try again later.",
+    "errorLoad": "Unable to load projects at present. Please try again later.",
     "errorDelete": "Failed to delete the project. Please try again."
-  }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Have a question, project idea, or wish to get in touch? Feel free to drop a message in English, Japanese, German, or Spanish.",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Your message",
+      "send": "Send"
+    },
+    "footer": "I look forward to hearing from you and exploring how we might work together."
+  },
+  "skillsTitle": "🛠️ Technical Skills Overview",
+  "frontend": "💻 Front-End Development",
+  "frontendDetail": "Languages & Frameworks:\nHTML5, CSS3, JavaScript (ES6+), TypeScript\nVue.js 3 (Composition API, <script setup>)\n\nUI/UX Design:\nTailwind CSS, DOM manipulation\n\nRouting:\nVue Router (SPA)",
+  "i18n": "🌐 Internationalisation (i18n)",
+  "i18nDetail": "Tools: vue-i18n\nLanguages: Japanese (native), English (C1), Spanish (B2), German (B1)\nFeatures: Dynamic UI, language persistence via localStorage, .json dictionaries",
+  "backend": "🔙 Back-End & API Integration",
+  "backendDetail": "Framework: Express.js (Node.js)\nAPI: RESTful (GET/POST/PUT/DELETE)\nHTTP: Axios\nDatabases: SQLite, MySQL",
+  "cloud": "☁️ Cloud & DevOps",
+  "cloudDetail": "AWS (basic deployment)\nGit (GitHub/GitLab)\nBuild & Deploy: Vite, Netlify/Vercel",
+  "testing": "🧪 Testing & Development Workflow",
+  "testingDetail": "Manual and unit testing\nLow-code: kintone\nData migration: over 1 million records",
+  "softSkills": "🤝 Business & Soft Skills",
+  "softSkillsDetail": "Multilingual: JA/EN/ES/DE\nCross-cultural collaboration\nClient support\nRemote work\nProblem solving\nProject coordination"
 }

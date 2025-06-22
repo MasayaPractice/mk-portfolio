@@ -5,12 +5,12 @@
     >
       <!-- Section Title -->
       <h1 class="text-2xl sm:text-4xl font-serif font-bold text-indigo-800 mb-4 tracking-wide">
-        {{ t('title') }}
+        {{ t('about.title') }}
       </h1>
 
       <!-- Intro -->
       <p class="text-base sm:text-lg leading-relaxed mb-6 font-light tracking-wide">
-        {{ t('intro') }}
+        {{ t('about.intro') }}
       </p>
 
       <!-- Skills Header -->
