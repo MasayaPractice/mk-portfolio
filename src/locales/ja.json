@@ -1,0 +1,65 @@
+{
+  "title": "スキルと経験の概要",
+  "intro": "清遠将也（きよと まさや）と申します。フルスタックエンジニアとして、モダンなフロントエンド・バックエンド開発やシステム統合、多言語コミュニケーションに携わってきました。このページでは、国際的な開発環境に関連する技術的およびビジネススキルをご紹介します。",
+  "skillsTitle": "🛠️ 技術スキル概要",
+
+  "frontend": "💻 フロントエンド開発",
+  "frontendDetail": "使用言語・フレームワーク:\nHTML5、CSS3、JavaScript (ES6+)、TypeScript\nVue.js 3 (Composition API、<script setup>)\n\nUI/UXデザイン:\nTailwind CSS、DOM操作\n\nルーティング:\nVue Router (SPA)",
+
+  "i18n": "🌐 多言語対応 (i18n)",
+  "i18nDetail": "使用ツール: vue-i18n\n対応言語: 日本語（ネイティブ）、英語（C1）、スペイン語（B2）、ドイツ語（B1）\n特徴: 動的多言語UI切り替え、localStorageによる言語保持、.json辞書対応",
+
+  "backend": "🔙 バックエンド・API連携",
+  "backendDetail": "フレームワーク: Express.js (Node.js)\nAPI: RESTful (GET/POST/PUT/DELETE)\nHTTPクライアント: Axios\nデータベース: SQLite、MySQL",
+
+  "cloud": "☁️ クラウド・DevOps",
+  "cloudDetail": "AWS（基礎的なデプロイ）\nGit（GitHub/GitLab）\nビルド＆デプロイ: Vite、Netlify/Vercel",
+
+  "testing": "🧪 テスト・開発フロー",
+  "testingDetail": "手動・単体テスト\nローコードツール: kintone\nデータ移行: 100万件以上のレコード対応",
+
+  "softSkills": "🤝 ビジネス・ソフトスキル",
+  "softSkillsDetail": "多言語対応（日本語・英語・スペイン語・ドイツ語）\n国際チームでの協働\nクライアントサポート\nリモートワーク\n課題解決能力\nプロジェクト調整",
+
+  "about": {
+    "title": "自己紹介",
+    "intro": "私は清遠将也、バルセロナ在住の多言語ITエンジニア兼語学講師です。過去3年間にわたり、ウェブシステムの設計・保守、テスト実施、国際的なクライアントサポートに携わってきました。",
+    "educationIt": "教育とITの分野で経験を積み、Preplyで600時間以上の日本語指導を行い、日本全国16,000以上の店舗で使われるPOSシステムの開発にも携わりました。",
+    "accenture": "Gleamorbでは店舗システムの改善に取り組み、Accenture Japanではユニクロのグローバルプラットフォーム向け大規模データ移行を支援しました。",
+    "languages": "日本語・英語が堪能で、ドイツ語（B1）、スペイン語（B2）の中級レベルを持っています。4言語に精通した数少ない日本人プロフェッショナルとして、文化と技術の架け橋となっています。",
+    "strengths": "分析的思考、リモートコラボレーション、クライアント志向のマインドセットが強みです。ローコードツール活用によりワークフローを約30%効率化し、日本・スペイン・フィリピン間のチームコミュニケーションもリードしています。",
+    "closing": "技術的なソリューション構築と、文化を超えた意味のあるつながりを作ることに情熱を注いでいます。"
+  },
+
+  "contact": {
+    "title": "お問い合わせ",
+    "description": "ご質問、ご相談、あるいはご連絡をご希望の方はお気軽にどうぞ。日本語、英語、ドイツ語、スペイン語でのご対応が可能です。",
+    "form": {
+      "name": "お名前",
+      "email": "メールアドレス",
+      "message": "メッセージ内容",
+      "send": "送信"
+    },
+    "footer": "ご連絡を心よりお待ちしております。一緒にお仕事できる日を楽しみにしています。"
+  },
+
+  "projects": {
+    "title": "プロジェクト",
+    "addProject": {
+      "title": "新しいプロジェクトを追加",
+      "projectTitle": "プロジェクト名",
+      "description": "詳細説明",
+      "startDate": "開始日",
+      "endDate": "終了日",
+      "save": "保存",
+      "alertSuccess": "プロジェクトが正常に保存されました！",
+      "alertError": "プロジェクトの保存に失敗しました。"
+    },
+    "Edit": "編集",
+    "Delete": "削除",
+    "noProjects": "プロジェクトはありません",
+    "confirmDelete": "このプロジェクトを削除してもよろしいですか？",
+    "errorLoad": "プロジェクトの読み込みに失敗しました",
+    "errorDelete": "プロジェクトの削除に失敗しました"
+  }
+}

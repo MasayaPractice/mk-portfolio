@@ -1,0 +1,55 @@
+{
+  "title": "Resumen de habilidades y experiencia",
+  "intro": "Me llamo Masaya Kiyoto. Soy un ingeniero full-stack con experiencia en desarrollo moderno frontend y backend, integración de sistemas y comunicación multilingüe. En esta página, presento habilidades técnicas y comerciales relacionadas con entornos de desarrollo internacionales.",
+  "skillsTitle": "🛠️ Resumen de habilidades técnicas",
+
+  "frontend": "💻 Desarrollo Frontend",
+  "frontendDetail": "Lenguajes y frameworks usados:\nHTML5, CSS3, JavaScript (ES6+), TypeScript\nVue.js 3 (Composition API, <script setup>)\n\nDiseño UI/UX:\nTailwind CSS, manipulación DOM\n\nRouting:\nVue Router (SPA)",
+
+  "i18n": "🌐 Soporte multilingüe (i18n)",
+  "i18nDetail": "Herramientas usadas: vue-i18n\nIdiomas soportados: japonés (nativo), inglés (C1), español (B2), alemán (B1)\nCaracterísticas: cambio dinámico de UI multilingüe, almacenamiento local para idioma, soporte para diccionarios .json",
+
+  "backend": "🔙 Backend y API",
+  "backendDetail": "Framework: Express.js (Node.js)\nAPI: RESTful (GET/POST/PUT/DELETE)\nCliente HTTP: Axios\nBases de datos: SQLite, MySQL",
+
+  "cloud": "☁️ Nube y DevOps",
+  "cloudDetail": "AWS (despliegue básico)\nGit (GitHub/GitLab)\nBuild & deploy: Vite, Netlify/Vercel",
+
+  "testing": "🧪 Pruebas y flujo de desarrollo",
+  "testingDetail": "Pruebas manuales y unitarias\nHerramientas low-code: kintone\nMigración de datos: soporte para más de 1 millón de registros",
+
+  "softSkills": "🤝 Habilidades blandas y de negocio",
+  "softSkillsDetail": "Multilingüe (japonés, inglés, español, alemán)\nTrabajo en equipos internacionales\nSoporte a clientes\nTrabajo remoto\nResolución de problemas\nCoordinación de proyectos",
+
+  "about": {
+    "title": "Sobre mí",
+    "intro": "Soy Masaya Kiyoto, ingeniero IT multilingüe y profesor de idiomas en Barcelona. Durante los últimos 3 años he trabajado en diseño y mantenimiento de sistemas web, pruebas y soporte a clientes internacionales.",
+    "educationIt": "Con experiencia en educación e IT, he enseñado japonés más de 600 horas en Preply y contribuido al desarrollo de un sistema POS usado en más de 16,000 tiendas en Japón.",
+    "accenture": "En Gleamorb mejoré sistemas para tiendas, y en Accenture Japan apoyé la migración de grandes datos para la plataforma global de Uniqlo.",
+    "languages": "Dominio de japonés e inglés, nivel intermedio de alemán (B1) y español (B2). Soy uno de los pocos profesionales japoneses con fluidez en 4 idiomas, sirviendo como puente cultural y técnico.",
+    "strengths": "Pensamiento analítico, colaboración remota y enfoque en clientes son mis fortalezas. He optimizado flujos de trabajo en un 30% usando herramientas low-code y lidero comunicación entre equipos en Japón, España y Filipinas.",
+    "closing": "Apasionado por construir soluciones técnicas y conexiones significativas que trasciendan culturas."
+  },
+
+  "contact": {
+    "title": "Contacto",
+    "description": "No dude en contactarme para preguntas, consultas o mensajes. Puedo responder en japonés, inglés, alemán y español.",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "send": "Enviar"
+    },
+    "footer": "Espero con interés su contacto. Espero poder trabajar juntos pronto."
+  },
+
+  "addProject": "Agregar proyecto",
+  "Edit": "Editar",
+  "Delete": "Eliminar",
+  "noProjects": "No hay proyectos",
+  "projects": {
+    "errorLoad": "Error al cargar proyectos",
+    "confirmDelete": "¿Está seguro de que desea eliminar este proyecto?",
+    "errorDelete": "Error al eliminar el proyecto"
+  }
+}

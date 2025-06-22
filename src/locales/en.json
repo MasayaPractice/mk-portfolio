@@ -1,0 +1,66 @@
+{
+  "title": "Resumen de Habilidades y Experiencia",
+  "intro": "Soy Masaya Kiyoto, un ingeniero full-stack multilingüe ...",
+  "skillsTitle": "🛠️ Resumen de Habilidades Técnicas",
+
+  "frontend": "💻 Desarrollo Front-End",
+  "frontendDetail": "Lenguajes y frameworks:\nHTML5, CSS3, JavaScript (ES6+), TypeScript\nVue.js 3 (Composition API, <script setup>)\n\nDiseño UI/UX:\nTailwind CSS, manipulación del DOM\n\nEnrutamiento:\nVue Router (SPA)",
+
+  "i18n": "🌐 Internacionalización (i18n)",
+  "i18nDetail": "Herramientas: vue-i18n\nIdiomas: Japonés (nativo), Inglés (C1), Español (B2), Alemán (B1)\nCaracterísticas: Interfaz multilingüe dinámica, persistencia con localStorage, diccionarios .json",
+
+  "backend": "🔙 Backend e Integración de API",
+  "backendDetail": "Framework: Express.js (Node.js)\nAPI: RESTful (GET/POST/PUT/DELETE)\nHTTP: Axios\nBases de datos: SQLite, MySQL",
+
+  "cloud": "☁️ Nube y DevOps",
+  "cloudDetail": "AWS (despliegue básico)\nGit (GitHub/GitLab)\nBuild & Deploy: Vite, Netlify/Vercel",
+
+  "testing": "🧪 Pruebas y Flujo de Desarrollo",
+  "testingDetail": "Pruebas manuales y unitarias\nLow-code: kintone\nMigración de datos: más de 1 millón de registros",
+
+  "softSkills": "🤝 Habilidades Empresariales y Blandas",
+  "softSkillsDetail": "Multilingüe: JA/EN/ES/DE\nTrabajo en equipo multicultural\nAtención al cliente\nTrabajo remoto\nResolución de problemas\nCoordinación de proyectos",
+
+  "about": {
+    "title": "Sobre mí",
+    "intro": "Soy Masaya Kiyoto, ingeniero de TI multilingüe e instructor de idiomas residente en Barcelona. En los últimos tres años, he diseñado y mantenido sistemas web, realizado pruebas y brindado soporte a clientes internacionales.",
+    "educationIt": "Mi carrera abarca la educación y la tecnología — desde enseñar japonés más de 600 horas en Preply, hasta desarrollar sistemas POS utilizados en más de 16,000 tiendas en Japón.",
+    "accenture": "En Gleamorb mejoré sistemas en tienda, y en Accenture Japón apoyé la migración de datos a gran escala para la plataforma global de Uniqlo.",
+    "languages": "Hablo japonés e inglés con fluidez, y tengo un nivel intermedio de alemán (B1) y español (B2). Como uno de los pocos profesionales japoneses con dominio de cuatro idiomas, conecto la tecnología y la cultura sin problemas.",
+    "strengths": "Mis fortalezas incluyen pensamiento analítico, colaboración remota y enfoque en el cliente. He optimizado flujos de trabajo con herramientas low-code, reduciendo el esfuerzo manual en un 30%, y liderado la comunicación entre equipos en Japón, España y Filipinas.",
+    "closing": "Apasionado por construir soluciones técnicas y conexiones significativas entre culturas."
+  },
+
+  "contact": {
+    "title": "CONTACTO",
+    "description": "Si tienes preguntas, ideas de proyecto o simplemente deseas conectarte, no dudes en escribirme. Hablo inglés, japonés, alemán y español.",
+    "form": {
+      "name": "Tu nombre",
+      "email": "Tu correo electrónico",
+      "message": "Tu mensaje",
+      "send": "Enviar"
+    },
+    "footer": "Espero saber de ti pronto y explorar formas de colaborar juntos."
+  },
+
+  "projects": {
+    "title": "Proyectos",
+    "addProject": {
+      "title": "Añadir Nuevo Proyecto",
+      "projectTitle": "Nombre del proyecto",
+      "description": "Descripción",
+      "startDate": "Fecha de inicio",
+      "endDate": "Fecha de fin",
+      "save": "Guardar",
+      "alertSuccess": "¡Proyecto guardado con éxito!",
+      "alertError": "No se pudo guardar el proyecto."
+    },
+    "actions": "Acciones",
+    "Edit": "Editar",
+    "Delete": "Eliminar",
+    "noProjects": "No hay proyectos disponibles.",
+    "confirmDelete": "¿Eliminar este proyecto?",
+    "errorLoad": "No se pueden cargar los proyectos en este momento. Intenta de nuevo más tarde.",
+    "errorDelete": "No se pudo eliminar el proyecto. Intenta nuevamente."
+  }
+}
