@@ -1,66 +1,80 @@
 {
-  "title": "Fähigkeiten & Erfahrung – Übersicht",
-  "intro": "Ich bin Masaya Kiyoto, ein mehrsprachiger Full-Stack-Entwickler ...",
-  "skillsTitle": "🛠️ Technische Fähigkeiten – Übersicht",
+  "Home": "Startseite",
+  "About": "Über mich",
+  "Projects": "Projekte",
+  "Contact": "Kontakt",
 
-  "frontend": "💻 Front-End Entwicklung",
-  "frontendDetail": "Sprachen & Frameworks:\nHTML5, CSS3, JavaScript (ES6+), TypeScript\nVue.js 3 (Composition API, <script setup>)\n\nUI/UX Design:\nTailwind CSS, DOM-Manipulation\n\nRouting:\nVue Router (SPA)",
+  "title": "Übersicht über Fähigkeiten & Erfahrungen",
+  "intro": "Ich bin Masaya Kiyoto, ein mehrsprachiger Full-Stack-Entwickler mit Erfahrung in modernem Frontend- und Backend-Development, Systemintegration und mehrsprachiger Kommunikation. Auf dieser Seite präsentiere ich technische und geschäftliche Fähigkeiten im internationalen Entwicklungsumfeld.",
+  "skillsTitle": "🛠️ Technische Fähigkeiten im Überblick",
 
-  "i18n": "🌐 Internationalisierung (i18n)",
-  "i18nDetail": "Tools: vue-i18n\nSprachen: Japanisch (Muttersprache), Englisch (C1), Spanisch (B2), Deutsch (B1)\nFunktionen: Dynamisches UI, Sprachspeicherung mit localStorage, .json-Wörterbücher",
+  "frontend": "💻 Frontend-Entwicklung",
+  "frontendDetail": "Verwendete Sprachen und Frameworks:\nHTML5, CSS3, JavaScript (ES6+), TypeScript\nVue.js 3 (Composition API, <script setup>)\n\nUI/UX Design:\nTailwind CSS, DOM-Manipulation\n\nRouting:\nVue Router (SPA)",
 
-  "backend": "🔙 Back-End & API-Integration",
-  "backendDetail": "Framework: Express.js (Node.js)\nAPI: RESTful (GET/POST/PUT/DELETE)\nHTTP: Axios\nDatenbanken: SQLite, MySQL",
+  "i18n": "🌐 Mehrsprachige Unterstützung (i18n)",
+  "i18nDetail": "Verwendete Tools: vue-i18n\nUnterstützte Sprachen: Japanisch (Muttersprache), Englisch (C1), Spanisch (B2), Deutsch (B1)\nFeatures: Dynamische mehrsprachige UI, Sprachenpersistenz via localStorage, Unterstützung für .json Wörterbücher",
+
+  "backend": "🔙 Backend & API-Integration",
+  "backendDetail": "Framework: Express.js (Node.js)\nAPI: RESTful (GET/POST/PUT/DELETE)\nHTTP-Client: Axios\nDatenbanken: SQLite, MySQL",
 
   "cloud": "☁️ Cloud & DevOps",
-  "cloudDetail": "AWS (grundlegende Bereitstellung)\nGit (GitHub/GitLab)\nBuild & Deployment: Vite, Netlify/Vercel",
+  "cloudDetail": "AWS (Grundlagen Deployment)\nGit (GitHub/GitLab)\nBuild & Deployment: Vite, Netlify/Vercel",
 
-  "testing": "🧪 Tests & Entwicklungsablauf",
-  "testingDetail": "Manuelle/Unit-Tests\nLow-Code: kintone\nDatenmigration: über 1 Mio. Datensätze",
+  "testing": "🧪 Tests & Entwicklungs-Workflow",
+  "testingDetail": "Manuelle und Unit-Tests\nLow-Code Tools: kintone\nDatenmigration: Unterstützung von über 1 Million Datensätzen",
 
-  "softSkills": "🤝 Geschäfts- & Soft Skills",
-  "softSkillsDetail": "Mehrsprachig: JA/EN/ES/DE\nInterkulturelle Zusammenarbeit\nKundensupport\nRemote-Arbeit\nProblemlösung\nProjektkoordination",
+  "softSkills": "🤝 Business- & Soft Skills",
+  "softSkillsDetail": "Mehrsprachig (Japanisch, Englisch, Spanisch, Deutsch)\nInternationale Teamarbeit\nKundensupport\nRemote-Arbeit\nProblemlösung\nProjektkoordination",
 
   "about": {
     "title": "Über mich",
-    "intro": "Ich bin Masaya Kiyoto, ein mehrsprachiger IT-Ingenieur und Sprachlehrer mit Wohnsitz in Barcelona. In den letzten drei Jahren habe ich Websysteme entworfen und gepflegt, Tests durchgeführt und internationale Kunden betreut.",
-    "educationIt": "Ich habe Erfahrungen in der Bildung und IT gesammelt – über 600 Stunden Japanischunterricht bei Preply sowie Entwicklung von POS-Systemen, die in über 16.000 Geschäften in Japan eingesetzt werden.",
-    "accenture": "Bei Gleamorb verbesserte ich interne Shopsysteme, und bei Accenture Japan unterstützte ich die großflächige Datenmigration für Uniqlo’s globale Plattform.",
-    "languages": "Ich spreche fließend Japanisch und Englisch, sowie Deutsch (B1) und Spanisch (B2) auf mittlerem Niveau. Als einer der wenigen japanischen Fachkräfte mit vier Sprachen schlage ich eine Brücke zwischen Kultur und Technik.",
-    "strengths": "Meine Stärken sind analytisches Denken, Zusammenarbeit auf Distanz und kundenorientiertes Arbeiten. Durch Low-Code-Tools konnte ich Workflows um ca. 30% effizienter gestalten und Kommunikation zwischen Japan, Spanien und den Philippinen koordinieren.",
-    "closing": "Ich liebe es, technische Lösungen zu entwickeln und bedeutungsvolle Verbindungen über Kulturen hinweg zu schaffen."
+    "intro": "Ich bin Masaya Kiyoto, ein mehrsprachiger IT-Ingenieur und Sprachlehrer aus Barcelona. In den letzten 3 Jahren habe ich Websysteme entworfen und gewartet, Tests durchgeführt und internationale Kunden betreut.",
+    "educationIt": "Mit Erfahrung in Bildung und IT habe ich über 600 Stunden Japanisch auf Preply unterrichtet und an der Entwicklung eines POS-Systems mitgewirkt, das in über 16.000 Geschäften in Japan eingesetzt wird.",
+    "accenture": "Bei Gleamorb habe ich interne Shop-Systeme verbessert, und bei Accenture Japan unterstützte ich die Migration großer Datenmengen für Uniqlo’s globale Plattform.",
+    "languages": "Ich spreche fließend Japanisch und Englisch sowie Mittelstufe Deutsch (B1) und Spanisch (B2). Als einer der wenigen japanischen Fachkräfte mit vier Sprachen überbrücke ich Kultur und Technik.",
+    "strengths": "Analytisches Denken, Remote-Zusammenarbeit und kundenorientierte Lösungen zählen zu meinen Stärken. Ich habe Arbeitsabläufe um etwa 30 % mit Low-Code-Tools optimiert und die Kommunikation zwischen Teams in Japan, Spanien und den Philippinen gefördert.",
+    "closing": "Ich bin leidenschaftlich daran interessiert, technische Lösungen zu entwickeln und bedeutungsvolle interkulturelle Verbindungen zu schaffen."
   },
 
   "contact": {
-    "title": "KONTAKT",
-    "description": "Fragen, Projektideen oder Interesse an einer Zusammenarbeit? Ich freue mich auf deine Nachricht – auf Englisch, Japanisch, Deutsch oder Spanisch.",
+    "title": "Kontakt",
+    "description": "Bei Fragen, Projektideen oder Anliegen kontaktieren Sie mich gerne. Ich antworte auf Japanisch, Englisch, Deutsch und Spanisch.",
     "form": {
-      "name": "Dein Name",
-      "email": "Deine E-Mail",
-      "message": "Deine Nachricht",
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail",
+      "message": "Ihre Nachricht",
       "send": "Senden"
     },
-    "footer": "Ich freue mich darauf, von dir zu hören und gemeinsam spannende Projekte zu realisieren."
+    "footer": "Ich freue mich auf Ihre Nachricht und darauf, wie wir zusammenarbeiten können."
   },
 
   "projects": {
     "title": "Projekte",
     "addProject": {
       "title": "Neues Projekt hinzufügen",
-      "projectTitle": "Projektname",
+      "projectTitle": "Projekttitel",
       "description": "Beschreibung",
       "startDate": "Startdatum",
       "endDate": "Enddatum",
       "save": "Speichern",
+      "cancel": "Abbrechen",
       "alertSuccess": "Projekt erfolgreich gespeichert!",
-      "alertError": "Projekt konnte nicht gespeichert werden."
+      "alertError": "Fehler beim Speichern des Projekts."
     },
-    "actions": "Aktionen",
-    "Edit": "Bearbeiten",
-    "Delete": "Löschen",
+    "tableHeaders": {
+      "projectTitle": "Projekttitel",
+      "description": "Beschreibung",
+      "startDate": "Startdatum",
+      "endDate": "Enddatum",
+      "actions": "Aktionen"
+    },
+    "actions": {
+      "edit": "Bearbeiten",
+      "delete": "Löschen"
+    },
     "noProjects": "Keine Projekte verfügbar.",
-    "confirmDelete": "Dieses Projekt wirklich löschen?",
-    "errorLoad": "Projekte konnten nicht geladen werden. Bitte später erneut versuchen.",
-    "errorDelete": "Projekt konnte nicht gelöscht werden. Bitte später erneut versuchen."
+    "confirmDelete": "Sind Sie sicher, dass Sie dieses Projekt löschen möchten?",
+    "errorLoad": "Projekte konnten momentan nicht geladen werden. Bitte versuchen Sie es später erneut.",
+    "errorDelete": "Fehler beim Löschen des Projekts. Bitte versuchen Sie es erneut."
   }
 }

@@ -1,4 +1,9 @@
 {
+  "Home": "Inicio",
+  "About": "Sobre mí",
+  "Projects": "Proyectos",
+  "Contact": "Contacto",
+
   "title": "Resumen de habilidades y experiencia",
   "intro": "Me llamo Masaya Kiyoto. Soy un ingeniero full-stack con experiencia en desarrollo moderno frontend y backend, integración de sistemas y comunicación multilingüe. En esta página, presento habilidades técnicas y comerciales relacionadas con entornos de desarrollo internacionales.",
   "skillsTitle": "🛠️ Resumen de habilidades técnicas",
@@ -43,13 +48,33 @@
     "footer": "Espero con interés su contacto. Espero poder trabajar juntos pronto."
   },
 
-  "addProject": "Agregar proyecto",
-  "Edit": "Editar",
-  "Delete": "Eliminar",
-  "noProjects": "No hay proyectos",
   "projects": {
-    "errorLoad": "Error al cargar proyectos",
+    "title": "Proyectos",
+    "addProject": {
+      "title": "Agregar nuevo proyecto",
+      "projectTitle": "Título del proyecto",
+      "description": "Descripción",
+      "startDate": "Fecha de inicio",
+      "endDate": "Fecha de fin",
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "alertSuccess": "¡Proyecto guardado con éxito!",
+      "alertError": "Error al guardar el proyecto."
+    },
+    "tableHeaders": {
+      "projectTitle": "Título del proyecto",
+      "description": "Descripción",
+      "startDate": "Fecha de inicio",
+      "endDate": "Fecha de fin",
+      "actions": "Acciones"
+    },
+    "actions": {
+      "edit": "Editar",
+      "delete": "Eliminar"
+    },
+    "noProjects": "No hay proyectos disponibles.",
     "confirmDelete": "¿Está seguro de que desea eliminar este proyecto?",
-    "errorDelete": "Error al eliminar el proyecto"
+    "errorLoad": "Error al cargar proyectos, intente más tarde.",
+    "errorDelete": "Error al eliminar el proyecto, intente nuevamente."
   }
 }

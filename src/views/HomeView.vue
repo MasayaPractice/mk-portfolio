@@ -1,24 +1,26 @@
 <template>
-  <section class="bg-cream text-gray-900 py-12 px-6">
+  <section class="bg-cream text-gray-900 py-8 px-4 sm:py-12 sm:px-6">
     <div
-      class="max-w-4xl mx-auto bg-white bg-opacity-90 shadow-xl rounded-xl border border-gray-300 p-8"
+      class="w-full max-w-full sm:max-w-4xl mx-auto bg-white bg-opacity-90 shadow-xl rounded-xl border border-gray-300 p-4 sm:p-8"
     >
       <!-- Section Title -->
-      <h1 class="text-4xl font-serif font-bold text-indigo-800 mb-4 tracking-wide">
+      <h1 class="text-2xl sm:text-4xl font-serif font-bold text-indigo-800 mb-4 tracking-wide">
         {{ t('title') }}
       </h1>
 
       <!-- Intro -->
-      <p class="text-lg leading-relaxed mb-6 font-light tracking-wide">
+      <p class="text-base sm:text-lg leading-relaxed mb-6 font-light tracking-wide">
         {{ t('intro') }}
       </p>
 
       <!-- Skills Header -->
-      <h2 class="text-2xl font-semibold text-indigo-700 mb-3 border-b border-indigo-300 pb-1">
+      <h2
+        class="text-xl sm:text-2xl font-semibold text-indigo-700 mb-3 border-b border-indigo-300 pb-1"
+      >
         {{ t('skillsTitle') }}
       </h2>
 
-      <div class="space-y-4 text-base">
+      <div class="space-y-4 text-sm sm:text-base">
         <!-- Front-End -->
         <div>
           <strong>{{ t('frontend') }}</strong
@@ -26,7 +28,7 @@
           <span class="block whitespace-pre-line">{{ t('frontendDetail') }}</span>
         </div>
 
-        <!-- Back-End (moved directly under Front-End) -->
+        <!-- Back-End -->
         <div>
           <strong>{{ t('backend') }}</strong
           ><br />

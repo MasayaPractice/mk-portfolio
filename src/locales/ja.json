@@ -52,14 +52,24 @@
       "startDate": "開始日",
       "endDate": "終了日",
       "save": "保存",
+      "cancel": "キャンセル",
       "alertSuccess": "プロジェクトが正常に保存されました！",
       "alertError": "プロジェクトの保存に失敗しました。"
     },
-    "Edit": "編集",
-    "Delete": "削除",
+    "tableHeaders": {
+      "projectTitle": "プロジェクト名",
+      "description": "説明",
+      "startDate": "開始日",
+      "endDate": "終了日",
+      "actions": "操作"
+    },
+    "actions": {
+      "edit": "編集",
+      "delete": "削除"
+    },
     "noProjects": "プロジェクトはありません",
     "confirmDelete": "このプロジェクトを削除してもよろしいですか？",
-    "errorLoad": "プロジェクトの読み込みに失敗しました",
-    "errorDelete": "プロジェクトの削除に失敗しました"
+    "errorLoad": "プロジェクトの読み込みに失敗しました。しばらくしてから再度お試しください。",
+    "errorDelete": "プロジェクトの削除に失敗しました。再度お試しください。"
   }
 }
