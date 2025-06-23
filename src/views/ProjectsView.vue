@@ -3,7 +3,7 @@
     <div
       class="max-w-6xl mx-auto bg-white bg-opacity-90 shadow-xl rounded-xl border border-gray-300 p-6"
     >
-      <h1 class="text-3xl font-serif font-bold text-indigo-800 mb-6">{{ $t('title') }}</h1>
+      <h1 class="text-3xl font-serif font-bold text-indigo-800 mb-6">{{ $t('projects.title') }}</h1>
 
       <button
         @click="$router.push('/projects/new')"
@@ -93,6 +93,8 @@ import { useI18n } from 'vue-i18n'
 import axios from 'axios'
 
 const { t } = useI18n()
+
+console.log(t('projects.addProject.title'))
 
 interface Project {
   id: number
