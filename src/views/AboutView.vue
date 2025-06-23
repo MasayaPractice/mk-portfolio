@@ -6,7 +6,7 @@
     >
       <!-- Profile photo -->
       <img
-        src="@/assets/images/profile.jpg"
+        :src="profileImg"
         alt="Portrait of Masaya Kiyoto"
         class="w-40 h-40 rounded-full object-cover mb-6 md:mb-0 md:mr-8"
       />
@@ -36,5 +36,7 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import profileImg from '@/assets/images/profile.jpg'
+
 const { t } = useI18n()
 </script>
