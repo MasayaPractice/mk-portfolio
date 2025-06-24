@@ -47,7 +47,7 @@
       </div>
     </div>
 
-    <!-- Mobile menu with animation and dividers -->
+    <!-- Mobile menu -->
     <transition name="mobile-menu">
       <div
         v-show="isOpen"
@@ -94,21 +94,17 @@
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-// i18n setup
 const { locale, t } = useI18n()
 
-// Reactive language and mobile menu toggle
 const lang = ref(locale.value)
 const isOpen = ref(false)
 
-// Language switch handler
 const changeLang = () => {
   locale.value = lang.value
   localStorage.setItem('lang', lang.value)
 }
 
-// Translated route labels
-const tHome = computed(() => t('Home'))
+const tHome = computed(() => t('home.title'))
 const tAbout = computed(() => t('about.title'))
 const tProjects = computed(() => t('projects.title'))
 const tContact = computed(() => t('contact.title'))
