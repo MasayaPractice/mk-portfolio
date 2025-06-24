@@ -1,17 +1,19 @@
 import { createI18n } from 'vue-i18n'
-import en from './locales/en.json'
 import ja from './locales/ja.json'
-import de from './locales/de.json'
+import en from './locales/en.json'
 import es from './locales/es.json'
+import de from './locales/de.json'
+
+const savedLocale = localStorage.getItem('lang')
 
 export const i18n = createI18n({
   legacy: false,
-  locale: 'en', // 初期表示言語
-  fallbackLocale: 'en', // フォールバック言語
+  locale: savedLocale || 'en', // 英語をデフォルトに
+  fallbackLocale: 'en',
   messages: {
-    en,
     ja,
-    de,
+    en,
     es,
+    de,
   },
 })

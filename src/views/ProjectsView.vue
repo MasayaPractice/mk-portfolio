@@ -93,7 +93,9 @@ import { useI18n } from 'vue-i18n'
 import axios from 'axios'
 
 const { t } = useI18n()
-
+// ここに追加
+console.log(t('about.title'))
+console.log(t('about.intro'))
 console.log(t('projects.addProject.title'))
 
 interface Project {

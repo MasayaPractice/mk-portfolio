@@ -79,6 +79,8 @@
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
+console.log(t('about.title')) // 空なら読み込みに問題あり
+console.log(t('about.intro'))
 </script>
 
 <style scoped>
