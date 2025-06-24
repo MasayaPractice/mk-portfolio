@@ -93,7 +93,6 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { i18n } from '../i18n' // i18nのインスタンスimport
 
 const { locale, t } = useI18n()
 
@@ -110,13 +109,13 @@ const tAbout = computed(() => t('about.title'))
 const tProjects = computed(() => t('projects.title'))
 const tContact = computed(() => t('contact.title'))
 
-// ここでonMounted追加
+// ログをonMounted内に入れて翻訳が確実に反映されるタイミングで表示
 onMounted(() => {
-  console.log('現在のlocale:', i18n.global.locale.value)
-  console.log('home.title:', i18n.global.t('home.title'))
-  console.log('about.title:', i18n.global.t('about.title'))
-  console.log('projects.title:', i18n.global.t('projects.title'))
-  console.log('contact.title:', i18n.global.t('contact.title'))
+  console.log('現在のlocale:', locale.value)
+  console.log('home.title:', t('home.title'))
+  console.log('about.title:', t('about.title'))
+  console.log('projects.title:', t('projects.title'))
+  console.log('contact.title:', t('contact.title'))
 })
 </script>
 
