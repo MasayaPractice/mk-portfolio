@@ -91,9 +91,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { i18n } from '../i18n' // i18nのインスタンスをimport（パスはプロジェクトに合わせて調整）
+import { i18n } from '../i18n' // i18nのインスタンスimport
 
 const { locale, t } = useI18n()
 
@@ -110,11 +110,14 @@ const tAbout = computed(() => t('about.title'))
 const tProjects = computed(() => t('projects.title'))
 const tContact = computed(() => t('contact.title'))
 
-// デバッグ用ログ
-
-console.log('t("about.title"):', t('about.title'))
-console.log('locale.value:', locale.value)
-console.log('全messages:', JSON.stringify(i18n.global.messages.value, null, 2))
+// ここでonMounted追加
+onMounted(() => {
+  console.log('現在のlocale:', i18n.global.locale.value)
+  console.log('home.title:', i18n.global.t('home.title'))
+  console.log('about.title:', i18n.global.t('about.title'))
+  console.log('projects.title:', i18n.global.t('projects.title'))
+  console.log('contact.title:', i18n.global.t('contact.title'))
+})
 </script>
 
 <style scoped>
