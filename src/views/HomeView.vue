@@ -81,7 +81,8 @@ import { useI18n } from 'vue-i18n'
 const { t, locale, availableLocales } = useI18n()
 
 console.log('現在の言語:', locale.value)
-console.log('利用可能な言語:', availableLocales.value) // .valueをつける
+console.log('利用可能な言語:', availableLocales) // ✅ OK
+
 console.log('about.title:', t('about.title'))
 </script>
 
