@@ -105,28 +105,16 @@ const changeLang = () => {
   localStorage.setItem('lang', lang.value)
 }
 
-// 安全にネストしたメッセージにアクセスする関数
-function getNestedMessage(obj: unknown, keys: string[]): string | undefined {
-  let current: unknown = obj
-  for (const key of keys) {
-    if (current && typeof current === 'object' && key in (current as Record<string, unknown>)) {
-      current = (current as Record<string, unknown>)[key]
-    } else {
-      return undefined
-    }
-  }
-  return typeof current === 'string' ? current : undefined
-}
-
 const tHome = computed(() => t('home.title'))
 const tAbout = computed(() => t('about.title'))
 const tProjects = computed(() => t('projects.title'))
 const tContact = computed(() => t('contact.title'))
 
 // デバッグ用ログ
+
 console.log('t("about.title"):', t('about.title'))
-const deAboutTitle = getNestedMessage(i18n.global.messages, ['de', 'about', 'title'])
-console.log('i18n.global.messages["de"]["about"]["title"]:', deAboutTitle)
+console.log('locale.value:', locale.value)
+console.log('全messages:', JSON.stringify(i18n.global.messages.value, null, 2))
 </script>
 
 <style scoped>
