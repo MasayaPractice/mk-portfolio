@@ -4,16 +4,18 @@ import en from './locales/en.json'
 import es from './locales/es.json'
 import de from './locales/de.json'
 
-const defaultLocale = 'en'
+type LocaleType = 'ja' | 'en' | 'es' | 'de'
 
-let savedLocale = defaultLocale
-if (typeof window !== 'undefined') {
-  savedLocale = localStorage.getItem('lang') || defaultLocale
-}
+const savedLocale = localStorage.getItem('lang') as LocaleType | null
 
 export const i18n = createI18n({
   legacy: false,
-  locale: savedLocale,
-  fallbackLocale: defaultLocale,
-  messages: { ja, en, es, de },
+  locale: savedLocale && ['ja', 'en', 'es', 'de'].includes(savedLocale) ? savedLocale : 'en',
+  fallbackLocale: 'en',
+  messages: {
+    ja,
+    en,
+    es,
+    de,
+  },
 })
