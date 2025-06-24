@@ -78,9 +78,11 @@
 // i18n hook
 import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n()
-console.log(t('about.title')) // 空なら読み込みに問題あり
-console.log(t('about.intro'))
+const { t, locale, availableLocales } = useI18n()
+
+console.log('現在の言語:', locale.value)
+console.log('利用可能な言語:', availableLocales)
+console.log('about.title:', t('about.title'))
 </script>
 
 <style scoped>
