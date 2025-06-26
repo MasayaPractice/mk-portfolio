@@ -5,16 +5,15 @@ import { PrismaClient } from '@prisma/client'
 const app = express()
 const prisma = new PrismaClient()
 
-// Allowed origins for CORS: local dev + production frontend URL
+// Allow both local and production frontend origins
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://your-production-url.vercel.app', // ← Replace with your actual production frontend URL
+  'https://mk-portfolio-beta.vercel.app', // Vercel production frontend URL
 ]
 
 app.use(
   cors({
     origin: function (origin, callback) {
-      // Allow requests with no origin (like Postman)
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true)
       } else {
@@ -127,7 +126,7 @@ app.put('/projects/:id', async (req: Request, res: Response): Promise<void> => {
 })
 
 // Delete a project by ID
-app.delete('/projects/:id', async (req, res) => {
+app.delete('/projects/:id', async (req: Request, res) => {
   const id = Number(req.params.id)
   if (isNaN(id)) {
     res.status(400).send({ message: 'Invalid ID' })
@@ -145,7 +144,7 @@ app.delete('/projects/:id', async (req, res) => {
   }
 })
 
-// Use PORT env var if available (Render, Vercel, etc.), else default 3000
+// Start server (for Render/Vercel deploy or local dev)
 const port = process.env.PORT || 3000
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`)
