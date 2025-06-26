@@ -5,9 +5,9 @@
 
       <form @submit.prevent="submitProject" class="space-y-6">
         <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">{{
-            $t('projects.addProject.projectTitle')
-          }}</label>
+          <label class="block text-sm font-medium text-gray-700 mb-1">
+            {{ $t('projects.addProject.projectTitle') }}
+          </label>
           <input
             v-model="title"
             type="text"
@@ -17,9 +17,9 @@
         </div>
 
         <div>
-          <label class="block text-sm font-medium text-gray-700 mb-1">{{
-            $t('projects.addProject.description')
-          }}</label>
+          <label class="block text-sm font-medium text-gray-700 mb-1">
+            {{ $t('projects.addProject.description') }}
+          </label>
           <textarea
             v-model="description"
             rows="4"
@@ -30,9 +30,9 @@
 
         <div class="grid grid-cols-2 gap-4">
           <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1">{{
-              $t('projects.addProject.startDate')
-            }}</label>
+            <label class="block text-sm font-medium text-gray-700 mb-1">
+              {{ $t('projects.addProject.startDate') }}
+            </label>
             <input
               v-model="startDate"
               type="date"
@@ -41,9 +41,9 @@
             />
           </div>
           <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1">{{
-              $t('projects.addProject.endDate')
-            }}</label>
+            <label class="block text-sm font-medium text-gray-700 mb-1">
+              {{ $t('projects.addProject.endDate') }}
+            </label>
             <input
               v-model="endDate"
               type="date"
@@ -51,6 +51,7 @@
             />
           </div>
         </div>
+
         <div class="flex justify-end space-x-4">
           <button
             type="button"
@@ -77,6 +78,8 @@ import axios from 'axios'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
+const API_BASE_URL = import.meta.env.VITE_API_URL
+
 const router = useRouter()
 const { t } = useI18n()
 
@@ -87,7 +90,7 @@ const endDate = ref('')
 
 const submitProject = async () => {
   try {
-    await axios.post('http://localhost:3000/projects', {
+    await axios.post(`${API_BASE_URL}/projects`, {
       title: title.value,
       description: description.value,
       startDate: startDate.value,

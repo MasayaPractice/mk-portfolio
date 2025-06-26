@@ -93,10 +93,9 @@ import { useI18n } from 'vue-i18n'
 import axios from 'axios'
 
 const { t } = useI18n()
-// ここに追加
-console.log(t('about.title'))
-console.log(t('about.intro'))
-console.log(t('projects.addProject.title'))
+
+// 環境変数からAPIのベースURLを取得
+const API_BASE_URL = import.meta.env.VITE_API_URL
 
 interface Project {
   id: number
@@ -121,7 +120,7 @@ function formatDate(dateStr?: string): string {
 // Load projects from the backend API
 async function loadProjects() {
   try {
-    const response = await axios.get('http://localhost:3000/projects')
+    const response = await axios.get(`${API_BASE_URL}/projects`)
     projectsList.value = response.data
   } catch (error) {
     console.error(error)
@@ -135,7 +134,7 @@ async function removeProject(id: number) {
   if (!confirmed) return
 
   try {
-    await axios.delete(`http://localhost:3000/projects/${id}`)
+    await axios.delete(`${API_BASE_URL}/projects/${id}`)
     projectsList.value = projectsList.value.filter((project) => project.id !== id)
   } catch (error) {
     console.error(error)

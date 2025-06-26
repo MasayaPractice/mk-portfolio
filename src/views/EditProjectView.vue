@@ -69,8 +69,9 @@ import { ref, onMounted } from 'vue'
 import axios from 'axios'
 import { useRouter } from 'vue-router'
 
-// propsの型宣言（idを受け取る）
 const props = defineProps<{ id: string }>()
+
+const API_BASE_URL = import.meta.env.VITE_API_URL
 
 const router = useRouter()
 
@@ -81,7 +82,7 @@ const endDate = ref('')
 
 onMounted(async () => {
   try {
-    const response = await axios.get(`http://localhost:3000/projects/${props.id}`)
+    const response = await axios.get(`${API_BASE_URL}/projects/${props.id}`)
     const project = response.data
 
     title.value = project.title
@@ -102,7 +103,7 @@ const submitProject = async () => {
   }
 
   try {
-    await axios.put(`http://localhost:3000/projects/${props.id}`, {
+    await axios.put(`${API_BASE_URL}/projects/${props.id}`, {
       title: title.value,
       description: description.value,
       startDate: startDate.value,

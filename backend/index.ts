@@ -5,10 +5,22 @@ import { PrismaClient } from '@prisma/client'
 const app = express()
 const prisma = new PrismaClient()
 
-// Allow requests from Vite dev server
+// Allowed origins for CORS: local dev + production frontend URL
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://your-production-url.vercel.app', // ← Replace with your actual production frontend URL
+]
+
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin: function (origin, callback) {
+      // Allow requests with no origin (like Postman)
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true)
+      } else {
+        callback(new Error('Not allowed by CORS'))
+      }
+    },
   }),
 )
 
@@ -114,7 +126,7 @@ app.put('/projects/:id', async (req: Request, res: Response): Promise<void> => {
   }
 })
 
-// Handle DELETE request to remove a project by ID
+// Delete a project by ID
 app.delete('/projects/:id', async (req, res) => {
   const id = Number(req.params.id)
   if (isNaN(id)) {
@@ -133,7 +145,8 @@ app.delete('/projects/:id', async (req, res) => {
   }
 })
 
-// Start server
-app.listen(3000, () => {
-  console.log('Server is running at http://localhost:3000')
+// Use PORT env var if available (Render, Vercel, etc.), else default 3000
+const port = process.env.PORT || 3000
+app.listen(port, () => {
+  console.log(`Server is running at http://localhost:${port}`)
 })
